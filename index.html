@@ -3,121 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tyrell Khan | Politics & Philosophy</title>
+    <title>Tyrell Khan | Arguments for Liberty</title>
     <style>
         :root {
-            --primary: #007725; /* SA Green */
-            --accent: #E03C31; /* SA Red */
-            --dark: #1a1a1a;
-            --light: #f9f9f9;
-            --gold: #FFB81C;
+            --primary: #1a1a1a;
+            --accent: #b08d57;
+            --bg: #f4f1ea;
+            --paper: #ffffff;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.7;
+            font-family: 'Garamond', serif;
+            line-height: 1.8;
+            background-color: var(--bg);
+            color: var(--primary);
             margin: 0;
-            background-color: var(--light);
-            color: var(--dark);
+            padding: 0;
         }
 
         header {
-            background: var(--dark);
+            background: var(--primary);
             color: white;
-            padding: 4rem 0 2rem 0;
+            padding: 3rem 1rem;
             text-align: center;
-            border-bottom: 6px solid var(--gold);
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             text-transform: uppercase;
-        }
-
-        header p {
-            color: var(--gold);
-            font-style: italic;
-            font-size: 1.1rem;
-        }
-
-        nav {
-            background: #333;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.9rem;
+            font-size: 2rem;
         }
 
         .container {
             max-width: 800px;
             margin: 2rem auto;
-            padding: 0 20px;
+            padding: 2rem;
+            background: var(--paper);
+            box-shadow: 10px 10px 0px rgba(0,0,0,0.05);
         }
 
-        .about-section {
-            text-align: center;
+        .argument {
             margin-bottom: 3rem;
-            padding: 2rem;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
 
-        .post-preview {
-            background: white;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            border-left: 8px solid var(--primary);
-            transition: transform 0.3s ease;
-        }
-
-        .post-preview:hover {
-            transform: translateY(-5px);
-        }
-
-        .tag {
-            color: var(--accent);
-            font-size: 0.8rem;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        .btn {
+        .argument h2 {
+            border-bottom: 2px solid var(--accent);
             display: inline-block;
-            background: var(--dark);
-            color: var(--gold);
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 15px;
-            border: 1px solid var(--gold);
+            margin-bottom: 1rem;
         }
 
-        .btn:hover {
-            background: var(--gold);
-            color: var(--dark);
+        .claim-box {
+            border-left: 4px solid var(--accent);
+            padding: 1rem 2rem;
+            background: #fdfdfd;
+            margin: 1.5rem 0;
+        }
+
+        .premise-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .premise-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .premise-list li::before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
         }
 
         footer {
             text-align: center;
-            padding: 3rem;
-            background: var(--dark);
-            color: white;
-            margin-top: 5rem;
+            padding: 2rem;
+            font-style: italic;
+            color: #666;
         }
     </style>
 </head>
@@ -125,42 +91,51 @@
 
 <header>
     <h1>Tyrell Khan</h1>
-    <p>South African Politics • Philosophical Inquiry • Social Critique</p>
+    <p>Structural Arguments on South African Liberty</p>
 </header>
 
-<nav>
-    <a href="#home">HOME</a>
-    <a href="#writing">WRITING</a>
-    <a href="#about">ABOUT TYRELL</a>
-    <a href="mailto:your-email@example.com">CONTACT</a>
-</nav>
-
 <div class="container">
-    <section id="about" class="about-section">
-        <h2>Welcome to my digital home base.</h2>
-        <p>I am <strong>Tyrell Khan</strong>. This space is dedicated to exploring the complex political landscape of South Africa through a philosophical lens. My goal is to shift from "taking notes" to "giving notes" to help us understand our world better.</p>
+
+    <section class="argument">
+        <h2>1. Decriminalization of Adult Consensual Sex Work</h2>
+        <p>The prohibition of sex work in South Africa is an inconsistent application of the right to bodily integrity. To maintain a logically sound legal system, the following must be considered:</p>
+        <div class="claim-box">
+            <ul class="premise-list">
+                <li><strong>Premise A:</strong> The South African Constitution guarantees the right to freedom and security of the person, including the right to make decisions concerning reproduction and the body.</li>
+                <li><strong>Premise B:</strong> Criminalization removes legal protections from workers, increasing the risk of violence and exploitation without reducing the prevalence of the work.</li>
+                <li><strong>Conclusion:</strong> Decriminalizing sex work is the only policy that aligns with constitutional mandates while simultaneously improving public safety.</li>
+            </ul>
+        </div>
     </section>
 
-    <div id="writing">
-        <article class="post-preview">
-            <span class="tag">Political Theory</span>
-            <h2>The Future of Post-Apartheid Governance</h2>
-            <p>Examining the structural challenges and philosophical shifts required to move toward a more equitable South African society.</p>
-            <a href="#" class="btn">Read Analysis</a>
-        </article>
+    <section class="argument">
+        <h2>2. Legalization of Cannabis Commerce</h2>
+        <p>The current legal "limbo" regarding the sale of cannabis creates a market vacuum that benefits unregulated actors rather than the citizens.</p>
+        <div class="claim-box">
+            <ul class="premise-list">
+                <li><strong>Premise A:</strong> Private use and cultivation are already legally recognized rights in South Africa.</li>
+                <li><strong>Premise B:</strong> Preventing the regulated sale of a legal substance forces citizens to interact with illicit markets to exercise their rights.</li>
+                <li><strong>Conclusion:</strong> Establishing a transparent, regulated commercial framework is a logical necessity to uphold the spirit of the court's recent rulings.</li>
+            </ul>
+        </div>
+    </section>
 
-        <article class="post-preview">
-            <span class="tag">Philosophy</span>
-            <h2>Ubuntu and the Social Contract</h2>
-            <p>Does the traditional African philosophy of Ubuntu offer a stronger foundation for a social contract than Western liberalism?</p>
-            <a href="#" class="btn">Read Essay</a>
-        </article>
-    </div>
+    <section class="argument">
+        <h2>3. Regulated Markets for Organ Donation</h2>
+        <p>The ethical objection to the sale of organs often fails to account for the direct cost in human lives caused by current shortages.</p>
+        <div class="claim-box">
+            <ul class="premise-list">
+                <li><strong>Premise A:</strong> A person has a higher degree of ownership over their internal organs than any other property; thus, the right to alienate (sell) that property should be protected.</li>
+                <li><strong>Premise B:</strong> A state-governed market would provide a safe, clinical environment for donors who are currently driven to dangerous, unregulated international black markets.</li>
+                <li><strong>Conclusion:</strong> Transitioning to a regulated compensation model for kidney donation respects individual autonomy and solves the chronic supply shortage.</li>
+            </ul>
+        </div>
+    </section>
+
 </div>
 
 <footer>
-    <p>&copy; 2026 Tyrell Khan. Built with the mindset of a learner.</p>
-    <p style="font-size: 0.8rem; color: #888;">"When one person teaches, two people learn."</p>
+    <p>&copy; 2026 Tyrell Khan | Logic & Liberty</p>
 </footer>
 
 </body>
