@@ -1,115 +1,118 @@
-<!-- ================= INDEX PAGE ================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home | SA Politics & Ethical Egoism</title>
+<title>SA Politics & Philosophy</title>
 <style>
 body {font-family: Arial; margin:0; background:#0b1f1a; color:#e8f5e9;}
 header, footer {background:#1b5e20; text-align:center; padding:20px;}
-nav {background:#2e7d32; padding:10px; text-align:center;}
-nav a {color:white; margin:0 15px; text-decoration:none; font-weight:bold;}
-section {max-width:900px; margin:auto; padding:20px;}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background:#2e7d32;
+    padding:30px;
+    width:250px;
+    text-align:center;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card:hover {
+    background:#388e3c;
+    transform:scale(1.05);
+}
+
+.essay {
+    display:none;
+    max-width:800px;
+    margin:40px auto;
+    padding:20px;
+    background:#1b5e20;
+    border-radius:10px;
+}
+
+button {
+    margin-top:20px;
+    padding:10px 20px;
+    background:#81c784;
+    border:none;
+    cursor:pointer;
+}
+
+p {margin-bottom:18px; line-height:1.6;}
 </style>
 </head>
 <body>
+
 <header>
 <h1>South African Politics & Philosophy</h1>
 <p>By Tyrell Khan</p>
 </header>
-<nav>
-<a href="essay1.html">Prostitution</a>
-<a href="essay2.html">Kidney Sales</a>
-<a href="essay3.html">Weed Trade</a>
-</nav>
-<section>
-<h2>Welcome</h2>
-<p>This website explores South African political issues through the lens of ethical egoism. Each essay examines controversial topics and argues from the standpoint of rational self-interest, individual autonomy, and voluntary exchange.</p>
-</section>
+
+<!-- CARDS -->
+<div class="container">
+    <div class="card" onclick="showEssay('essay1')">
+        <h2>Prostitution</h2>
+        <p>Should it be decriminalized?</p>
+    </div>
+
+    <div class="card" onclick="showEssay('essay2')">
+        <h2>Kidney Sales</h2>
+        <p>Should organs be sold?</p>
+    </div>
+
+    <div class="card" onclick="showEssay('essay3')">
+        <h2>Weed Trade</h2>
+        <p>Should it be legalized?</p>
+    </div>
+</div>
+
+<!-- ESSAYS -->
+<div id="essay1" class="essay">
+<h2>Decriminalizing Prostitution</h2>
+<p>A free society allows individuals to make choices about their own lives, especially when those choices involve voluntary exchange. Prostitution is one such case.</p>
+<p>Criminalization forces the practice underground, increasing danger and reducing safety. Decriminalization would improve conditions and allow individuals to act in their own interest.</p>
+<button onclick="goBack()">Back</button>
+</div>
+
+<div id="essay2" class="essay">
+<h2>Legalizing Kidney Sales</h2>
+<p>Individuals should have authority over their own bodies. Preventing kidney sales limits personal freedom and economic opportunity.</p>
+<p>A legal system would reduce black markets and allow safe, regulated transactions that benefit both parties.</p>
+<button onclick="goBack()">Back</button>
+</div>
+
+<div id="essay3" class="essay">
+<h2>Legalizing Weed Sales</h2>
+<p>The sale of cannabis is a voluntary exchange. Banning it creates illegal markets instead of eliminating demand.</p>
+<p>Legalization would support business growth, reduce crime, and respect personal choice.</p>
+<button onclick="goBack()">Back</button>
+</div>
+
 <footer>
 <p>&copy; 2026 Tyrell Khan</p>
 </footer>
+
+<script>
+function showEssay(id) {
+    document.querySelector('.container').style.display = 'none';
+    document.getElementById(id).style.display = 'block';
+}
+
+function goBack() {
+    document.querySelector('.container').style.display = 'flex';
+    document.querySelectorAll('.essay').forEach(e => e.style.display = 'none');
+}
+</script>
+
 </body>
 </html>
-
-
-<!-- ================= ESSAY 1 PAGE ================= -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Prostitution | Ethical Egoism</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header><h1>Decriminalizing Prostitution</h1><p>By Tyrell Khan</p></header>
-<nav>
-<a href="index.html">Home</a>
-<a href="essay2.html">Kidney Sales</a>
-<a href="essay3.html">Weed Trade</a>
-</nav>
-<section>
-<p>From an ethical egoist perspective, individuals should be free to pursue actions that maximize their self-interest, provided they do not violate the rights of others. Prostitution, when conducted voluntarily between consenting adults, represents a mutual exchange of value.</p>
-<p>Criminalization pushes the industry underground, increasing risk and reducing safety. Decriminalization would allow individuals to act rationally in their own interest, improve working conditions, and reduce exploitation.</p>
-</section>
-<footer><p>&copy; 2026 Tyrell Khan</p></footer>
-</body>
-</html>
-
-
-<!-- ================= ESSAY 2 PAGE ================= -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Kidney Sales | Ethical Egoism</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header><h1>Legalizing Kidney Sales</h1><p>By Tyrell Khan</p></header>
-<nav>
-<a href="index.html">Home</a>
-<a href="essay1.html">Prostitution</a>
-<a href="essay3.html">Weed Trade</a>
-</nav>
-<section>
-<p>Ethical egoism holds that individuals own their bodies. Preventing kidney sales restricts autonomy. If a person rationally decides selling a kidney benefits them, they should be allowed to do so.</p>
-<p>A regulated market could reduce illegal trade and increase organ availability while allowing individuals to pursue self-interest through voluntary exchange.</p>
-</section>
-<footer><p>&copy; 2026 Tyrell Khan</p></footer>
-</body>
-</html>
-
-
-<!-- ================= ESSAY 3 PAGE ================= -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Weed Trade | Ethical Egoism</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header><h1>Legalizing the Sale of Weed</h1><p>By Tyrell Khan</p></header>
-<nav>
-<a href="index.html">Home</a>
-<a href="essay1.html">Prostitution</a>
-<a href="essay2.html">Kidney Sales</a>
-</nav>
-<section>
-<p>From an ethical egoist perspective, banning weed sales restricts voluntary exchange. Individuals should be free to produce, sell, and consume cannabis if done consensually.</p>
-<p>Legalization would reduce crime, empower entrepreneurs, and align with the principle of rational self-interest.</p>
-</section>
-<footer><p>&copy; 2026 Tyrell Khan</p></footer>
-</body>
-</html>
-
-
-<!-- ================= OPTIONAL SHARED CSS ================= -->
-/* Save this as style.css */
-body {font-family: Arial; margin:0; background:#0b1f1a; color:#e8f5e9;}
-header, footer {background:#1b5e20; text-align:center; padding:20px;}
-nav {background:#2e7d32; padding:10px; text-align:center;}
-nav a {color:white; margin:0 15px; text-decoration:none; font-weight:bold;}
-section {max-width:900px; margin:auto; padding:20px;}
