@@ -3,139 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tyrell Khan | Arguments for Liberty</title>
+    <title>Tyrell Khan | Politics & Philosophy</title>
     <style>
         :root {
-            --primary: #1a1a1a;
-            --accent: #b08d57;
-            --bg: #f4f1ea;
-            --paper: #ffffff;
+            --bg-color: #1a1a1a;
+            --text-color: #e0e0e0;
+            --accent-color: #cda434; /* Gold accent */
+            --card-bg: #262626;
         }
 
         body {
-            font-family: 'Garamond', serif;
+            font-family: 'Georgia', serif;
             line-height: 1.8;
-            background-color: var(--bg);
-            color: var(--primary);
+            background-color: var(--bg-color);
+            color: var(--text-color);
             margin: 0;
             padding: 0;
         }
 
         header {
-            background: var(--primary);
-            color: white;
+            background-color: #111;
             padding: 3rem 1rem;
             text-align: center;
+            border-bottom: 2px solid var(--accent-color);
         }
 
-        header h1 {
+        h1 {
             margin: 0;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            color: var(--accent-color);
         }
 
         .container {
             max-width: 800px;
             margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .essay-card {
+            background: var(--card-bg);
             padding: 2rem;
-            background: var(--paper);
-            box-shadow: 10px 10px 0px rgba(0,0,0,0.05);
-        }
-
-        .argument {
             margin-bottom: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
         }
 
-        .argument h2 {
-            border-bottom: 2px solid var(--accent);
-            display: inline-block;
-            margin-bottom: 1rem;
-        }
-
-        .claim-box {
-            border-left: 4px solid var(--accent);
-            padding: 1rem 2rem;
-            background: #fdfdfd;
-            margin: 1.5rem 0;
-        }
-
-        .premise-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .premise-list li {
-            margin-bottom: 0.5rem;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-
-        .premise-list li::before {
-            content: "•";
-            color: var(--accent);
-            position: absolute;
-            left: 0;
-            font-weight: bold;
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 1px solid #444;
+            padding-bottom: 0.5rem;
         }
 
         footer {
             text-align: center;
             padding: 2rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .intro {
             font-style: italic;
-            color: #666;
+            text-align: center;
+            margin-bottom: 3rem;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Tyrell Khan</h1>
-    <p>Structural Arguments on South African Liberty</p>
+    <h1>TYRELL KHAN</h1>
+    <p>Discussions on South African Politics & Philosophy</p>
 </header>
 
 <div class="container">
+    <div class="intro">
+        <p>Exploring the boundaries of personal liberty, bodily autonomy, and legislative reform in the modern South African state.</p>
+    </div>
 
-    <section class="argument">
-        <h2>1. Decriminalization of Adult Consensual Sex Work</h2>
-        <p>The prohibition of sex work in South Africa is an inconsistent application of the right to bodily integrity. To maintain a logically sound legal system, the following must be considered:</p>
-        <div class="claim-box">
-            <ul class="premise-list">
-                <li><strong>Premise A:</strong> The South African Constitution guarantees the right to freedom and security of the person, including the right to make decisions concerning reproduction and the body.</li>
-                <li><strong>Premise B:</strong> Criminalization removes legal protections from workers, increasing the risk of violence and exploitation without reducing the prevalence of the work.</li>
-                <li><strong>Conclusion:</strong> Decriminalizing sex work is the only policy that aligns with constitutional mandates while simultaneously improving public safety.</li>
-            </ul>
-        </div>
-    </section>
+    <article class="essay-card">
+        <h2>The Case for Decriminalizing Sex Work</h2>
+        <p>In South Africa, the current legal framework surrounding sex work remains a vestige of colonial and apartheid-era morality laws. This essay argues that decriminalization is not merely a social preference, but a human rights necessity.</p>
+        <p>By moving toward a model similar to New Zealand’s, we can ensure that sex workers have access to COIDA (Compensation for Occupational Injuries and Diseases Act) and general labor protections, effectively removing the "shadow economy" status that leads to police extortion and violence...</p>
+        </article>
 
-    <section class="argument">
-        <h2>2. Legalization of Cannabis Commerce</h2>
-        <p>The current legal "limbo" regarding the sale of cannabis creates a market vacuum that benefits unregulated actors rather than the citizens.</p>
-        <div class="claim-box">
-            <ul class="premise-list">
-                <li><strong>Premise A:</strong> Private use and cultivation are already legally recognized rights in South Africa.</li>
-                <li><strong>Premise B:</strong> Preventing the regulated sale of a legal substance forces citizens to interact with illicit markets to exercise their rights.</li>
-                <li><strong>Conclusion:</strong> Establishing a transparent, regulated commercial framework is a logical necessity to uphold the spirit of the court's recent rulings.</li>
-            </ul>
-        </div>
-    </section>
+    <article class="essay-card">
+        <h2>Commercializing Cannabis: Beyond Private Use</h2>
+        <p>While the Constitutional Court made strides in the 2018 Prince judgment regarding private cultivation, the "trade" remains largely illegal. This creates a logical fallacy: one has the right to consume, but no safe, regulated legal framework to acquire.</p>
+        <p>From an economic standpoint, South Africa's climate is ideal for "Dagga" cultivation. Legalizing the sale would empower small-scale rural farmers and provide a significant tax revenue stream, shifting the industry from the hands of cartels to the formal economy...</p>
+        </article>
 
-    <section class="argument">
-        <h2>3. Regulated Markets for Organ Donation</h2>
-        <p>The ethical objection to the sale of organs often fails to account for the direct cost in human lives caused by current shortages.</p>
-        <div class="claim-box">
-            <ul class="premise-list">
-                <li><strong>Premise A:</strong> A person has a higher degree of ownership over their internal organs than any other property; thus, the right to alienate (sell) that property should be protected.</li>
-                <li><strong>Premise B:</strong> A state-governed market would provide a safe, clinical environment for donors who are currently driven to dangerous, unregulated international black markets.</li>
-                <li><strong>Conclusion:</strong> Transitioning to a regulated compensation model for kidney donation respects individual autonomy and solves the chronic supply shortage.</li>
-            </ul>
-        </div>
-    </section>
-
+    <article class="essay-card">
+        <h2>Organ Autonomy: The Ethics of Kidney Sales</h2>
+        <p>Perhaps the most controversial frontier of bodily autonomy is the right to alienate one's own organs for compensation. Current South African law prohibits the sale of human tissue, yet we face a chronic shortage of donors.</p>
+        <p>Philosophically, if an individual owns their body, they should have the right to enter into a contract for the sale of a kidney under strict medical supervision. This essay explores how a regulated market could eliminate the dangerous "black market" while saving thousands of lives currently lost to renal failure...</p>
+        </article>
 </div>
 
 <footer>
-    <p>&copy; 2026 Tyrell Khan | Logic & Liberty</p>
+    &copy; 2026 Tyrell Khan. All rights reserved.
 </footer>
 
 </body>
